@@ -1,4 +1,6 @@
 
+package dominio;
+
 public class CalculadoraDeEstoque {
 
 	public static void main(String[] args) {
@@ -36,13 +38,6 @@ public class CalculadoraDeEstoque {
 		}
 	
 	
-	if (soma < 150) {
-		System.out.println("Seu estoque está muito baixo " );
-	}else if (soma >= 2000) {
-		System.out.println("O total em estoque é muito alto! ");
-	}else {
-		System.out.println("Seu estoque está bom" );
-	}
-
+	
 }
 }
