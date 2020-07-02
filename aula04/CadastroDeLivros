@@ -1,0 +1,44 @@
+package dominio;
+
+public class CadastroDeLivros {
+
+	public static void main(String[] args) {
+		
+		
+		Livro l1 = new Livro ();
+		
+		l1.nome = "java";
+		l1.descricao = "novos caminhos";
+		l1.valor = 59.90;
+		l1.isbn ="978-85 ";
+		
+		Livro l2 = new Livro ();
+		
+		l2.nome = "mysql";
+		l2.descricao = "banco de dados";
+		l2.valor =100.12;
+		l2.isbn = "56698-56";
+		
+		Autor autor = new Autor();
+		
+		autor.nome = "leonardo";
+		autor.email ="leo@gmail.com";
+		autor.cpf ="960.646.761-91";
+		
+        Autor autor2 = new Autor();
+		
+		autor2.nome = "arthur";
+		autor2.email ="arthur@gmail.com";
+		autor2.cpf ="803.550.569-12";
+		
+		l1.autor = autor;
+		l2.autor = autor2;
+		
+		l1.mostrarDetalhes();
+		l2.mostrarDetalhes();
+		
+		
+
+	}
+
+}
