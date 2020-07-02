@@ -1,0 +1,27 @@
+public class CadastroDeLivros {
+
+	public static void main(String[] args) {
+		
+		
+		Livro l1 = new Livro ();
+		
+		l1.nome = " java";
+		l1.descricao = "novos caminhos";
+		l1.valor = 59.90;
+		l1.isbn ="978-85 ";
+		
+		Livro l2 = new Livro ();
+		
+		l2.nome = "mysql";
+		l2.descricao = "banco de dados";
+		l2.valor =100.12;
+		l2.isbn = "56698-56";
+		
+		System.out.println("O nome do livro é " +l1.nome);
+		System.out.println("O nome do livro é " +l2.nome);
+		System.out.println("O nome do livro é " +l2.valor);
+		
+
+	}
+
+}
