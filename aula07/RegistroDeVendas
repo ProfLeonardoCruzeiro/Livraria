@@ -1,0 +1,33 @@
+package dominio;
+
+public class RegistroDeVendas {
+
+	public static void main(String[] args) {
+		
+		
+		Autor autor = new Autor();
+		autor.setNome("Arthur");
+		
+		LivroFisico fisico = new LivroFisico(autor);
+		
+		fisico.setNome("teste de rotina");
+		
+		fisico.setValor(59.90);
+		
+		
+		Ebook ebook = new Ebook(autor);
+		ebook.setNome("Test de rotina");
+		
+		ebook.setValor(29.90);
+		
+		
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		
+		carrinho.adiciona(fisico);
+		carrinho.adiciona(ebook);
+		
+		System.out.println("Total: "+carrinho.getTotal());
+		
+	}
+
+}
