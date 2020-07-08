@@ -1,0 +1,27 @@
+package dominio;
+
+public class CarrinhoDeCompras {
+	
+	private double total;
+	
+	public void adiciona(Livro livro) {
+		
+		System.out.println("adicionado: "+livro);
+		
+		livro.aplicaDescontoDe(0.05);
+		
+		total += livro.getValor();
+	}
+	
+	public void adiciona(Revista revista ) {
+		System.out.println("adicionado: "+revista);
+		revista.aplicaDescontoDe(0.05);
+		total += revista.getValor();
+	}
+	
+	
+	public double getTotal() {
+		return total;		
+	}
+	
+}
