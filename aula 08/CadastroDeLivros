@@ -1,0 +1,35 @@
+package dominio;
+
+public class CadastroDeLivros {
+
+public static void main(String[] args) {
+		
+		
+		Autor autor = new Autor();		
+		autor.setNome("Leonado");
+		autor.setEmail("leo@gmail.com");
+		autor.setCpf("960.646.761-91");
+		
+		Livro l1 = new LivroFisico(autor);		
+		
+		l1.setNome("java");
+		l1.setDescricao("novos caminhos");
+		l1.setValor(59.90);
+		
+		
+		
+				
+		l1.mostrarDetalhes();
+		
+		Livro l2 = new LivroFisico(autor);
+		l2.setNome("mysql");
+		l2.setDescricao("novos caminhos");
+		l2.setValor(39.90); 
+		l2.setIsbn("200-85");
+		
+		l2.mostrarDetalhes();
+
+	}
+
+
+}
