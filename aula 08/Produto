@@ -1,0 +1,6 @@
+package dominio;
+
+public interface Produto {
+	
+	public abstract double getValor();
+}
